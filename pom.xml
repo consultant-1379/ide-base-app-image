@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ericsson.cifwk.images</groupId>
+        <artifactId>ERICide-base_CXP9032018</artifactId>
+        <version>1.0.2</version>
+    </parent>
+
+    <groupId>com.ericsson.cifw.images</groupId>
+    <artifactId>ERICide-base-app-image_CXP9032019</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>[${project.artifactId}] Image Build Project</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <publish_artifact>true</publish_artifact>
+        <packaging.type>qcow2</packaging.type>
+        <media.category>image</media.category>
+        <build.type>customize</build.type>
+        <set.rootpass>true</set.rootpass>
+        <set.disk>true</set.disk>
+        <thirdparty.yum.repo>https://atclvm1224.athtem.eei.ericsson.se/static/staticRepos/ENM/15_6/</thirdparty.yum.repo>
+        <artifact.to.install>hello-world,gnome-terminal,firefox</artifact.to.install>
+    </properties>
+  <scm>
+    <developerConnection>scm:git:ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ide-base-app-image</developerConnection>
+    <connection>scm:git:ssh://gerrit.ericsson.se:29418/OSS/com.ericsson.cifwk/ide-base-app-image</connection>
+    <tag>ide-base-1.0.2</tag>
+  </scm>
+</project>
